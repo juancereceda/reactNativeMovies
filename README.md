@@ -1,6 +1,6 @@
 # React Native MovieApp
 
-### This project is a frontend movieApp made with React Native
+### This project is a frontend movieApp made with React Native (in process)
 
 ### To run this app, you should:
 
