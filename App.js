@@ -10,7 +10,7 @@ import Tabs from "./navigation/tabs";
 
 export default function App() {
   const [loading, setLoading] = useState(true);
-
+  console.disableYellowBox = true;
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {

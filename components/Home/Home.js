@@ -12,41 +12,41 @@ export default function HomeScreen() {
       <UpperBar />
       <View>
         <Text style={styles.listTitle}>Bookmark</Text>
-        {bookmark && bookmark.length > 0 ? (
-          <View style={styles.listContainer}>
-            <ScrollView horizontal={true} style={styles.scrollView}>
-              {bookmark.map((movie) => {
+        <View style={styles.listContainer}>
+          <ScrollView horizontal={true} style={styles.scrollView}>
+            {bookmark && bookmark.length > 0 ? (
+              bookmark.map((movie) => {
                 return (
                   <Image
                     style={styles.listMovie}
                     source={{ uri: movie.Poster }}
                   />
                 );
-              })}
-            </ScrollView>
-          </View>
-        ) : (
-          <Text>Hey</Text>
-        )}
+              })
+            ) : (
+              <Text style={styles.notFound}>No movies on bookmark yet :(</Text>
+            )}
+          </ScrollView>
+        </View>
       </View>
       <View>
         <Text style={styles.listTitle}>Watched</Text>
-        {watched && watched.length > 0 ? (
-          <View style={styles.listContainer}>
-            <ScrollView horizontal={true} style={styles.scrollView}>
-              {watched.map((movie) => {
+        <View style={styles.listContainer}>
+          <ScrollView horizontal={true} style={styles.scrollView}>
+            {watched && watched.length > 0 ? (
+              watched.map((movie) => {
                 return (
                   <Image
                     style={styles.listMovie}
                     source={{ uri: movie.Poster }}
                   />
                 );
-              })}
-            </ScrollView>
-          </View>
-        ) : (
-          <Text>Hey</Text>
-        )}
+              })
+            ) : (
+              <Text style={styles.notFound}>No watched movies yet :(</Text>
+            )}
+          </ScrollView>
+        </View>
       </View>
     </View>
   );

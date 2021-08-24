@@ -1,12 +1,11 @@
 import React from "react";
-import { StyleSheet } from "react-native";
+import { StyleSheet, Dimensions } from "react-native";
 import Constants from "expo-constants";
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#FFC947",
-    justifyContent: "space-between",
     paddingTop: Constants.statusBarHeight,
     paddingBottom: 25,
   },
@@ -14,6 +13,13 @@ const styles = StyleSheet.create({
     height: 180,
     width: 120,
     marginHorizontal: 10,
+  },
+  notFound: {
+    color: "#FFFFFF",
+    fontSize: 24,
+    width: Dimensions.get("window").width,
+    textAlign: "center",
+    alignSelf: "center",
   },
   listContainer: {
     height: 180,

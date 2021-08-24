@@ -19,7 +19,7 @@ function MovieCard({ title, poster, id, year, navigation }) {
   let watchedMovies = useSelector((state) => state.watched);
 
   function handleImagePress() {
-    navigation.navigate("DetailScreen", { id });
+    navigation.navigate("Detail", { id });
   }
 
   function handleBookmarkPress(id) {

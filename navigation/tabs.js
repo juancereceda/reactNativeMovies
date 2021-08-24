@@ -31,12 +31,12 @@ function SearchStackScreen() {
   return (
     <SearchStack.Navigator>
       <SearchStack.Screen
-        name="SearchScreen"
+        name="Search"
         component={Search}
         options={optionStyles}
       />
       <SearchStack.Screen
-        name="DetailScreen"
+        name="Detail"
         component={Detail}
         options={optionStyles}
       />
@@ -48,12 +48,12 @@ function WatchedStackScreen() {
   return (
     <WatchedStack.Navigator>
       <WatchedStack.Screen
-        name="WatchedScreen"
+        name="Watched"
         component={Watched}
         options={optionStyles}
       />
       <WatchedStack.Screen
-        name="DetailScreen"
+        name="Detail"
         component={Detail}
         options={optionStyles}
       />
@@ -65,12 +65,12 @@ function BookmarkStackScreen() {
   return (
     <BookmarkStack.Navigator>
       <BookmarkStack.Screen
-        name="BookmarkScreen"
+        name="Bookmark"
         component={Bookmark}
         options={optionStyles}
       />
       <BookmarkStack.Screen
-        name="DetailScreen"
+        name="Detail"
         component={Detail}
         options={optionStyles}
       />
